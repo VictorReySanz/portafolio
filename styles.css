@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Estilo de la galería de videos */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Coloca dos columnas (para los dos elementos) */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;   /* Centra los elementos verticalmente */
+}
+
+.video-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    height: 700px;
+}
+
+.video-item h2 {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilo para los videos */
+#video1 {
+    width: 100%;
+    height: auto;
+}
+#video2 {
+    width: 100%;
+    height: 72%;
+}
+
+/* Estilo para la descripción */
+.description {
+    padding: 10px;
+    font-size: 1em;
+    color: #555;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Nueva sección de "Trabajando actualmente en" */
+.current-projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.current-projects h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  /* Coloca dos columnas (para los dos elementos) */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;   /* Centra los elementos verticalmente */
+}
+
+.image-item {
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;  /* Limita el tamaño máximo de la imagen */
+    margin: 0 auto;  /* Centra la imagen */
+    border-radius: 8px;
+    display: block;
+}
+
+#title {
+    text-align: center;
+}
+
+video::-webkit-media-controls-volume-slider {
+    display: none; /* Ocultar el control de volumen */
+}
+
+video::-webkit-media-controls-mute-button {
+    display: none; /* Opcional: ocultar el botón de mutear (en algunos navegadores) */
+}
+

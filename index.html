@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Victor Rey Sanz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio de Victor Rey Sanz</h1>
+    </header>
+
+    <main>
+        <section class="video-gallery">
+            <div class="video-item">
+                <h2>Share&Enjoy</h2>
+                <video id="video1" controls muted poster="resources/shareenjoylogo.png">
+                    <source src="resources/share&enjoy.mkv" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+                <p class="description">Aplicación Web en la que los usuarios tienen acceso a multiples libros publicados por ellos u otros usuarios. Tambien permite publicar un curriculum junto a un portafolio para mostrarlo al rsto de usuarios. Por ultimo, se pueden mantener conversaciones con otros usuarios a traves de chats.</p>
+            </div>
+            <div class="video-item">
+                <h2>GymRat</h2>
+                <video id="video2" controls muted muted poster="resources/gymrat.png">
+                    <source src="resources/gymrat.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+                <p class="description">Aplicación para poder gestionar las sesiones de entrenamiento. La app recomienda a los usuarios que cambios debe hacer en su rutina en función de sus sesiones pasadas.</p>
+            </div>
+        </section>
+
+        <br><br>
+        <h1 id="title">TRABAJANDO EN</h1>
+        <section class="image-gallery">
+            <div class="image-item">
+                <h2>Unnamed</h2>
+                <img src="resources/unamedlogo.png" alt="Videogame Unnamed" class="project-image">
+                <p class="description">Videojugos de plataformas en 2.5D.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript para asegurarse de que el volumen de los videos esté en 0
+        document.querySelectorAll('video').forEach(video => {
+            video.volume = 0;  // Establece el volumen a 0 (sin sonido)
+        });
+    </script>
+
+</body>
+</html>
