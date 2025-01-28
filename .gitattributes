@@ -1,2 +1,3 @@
 resources/gymrat.mp4 filter=lfs diff=lfs merge=lfs -text
 resources/share&enjoy.mkv filter=lfs diff=lfs merge=lfs -text
+resources/shareenjoy.mkv filter=lfs diff=lfs merge=lfs -text
