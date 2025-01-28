@@ -34,7 +34,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    height: 700px;
+    height: 500px;
 }
 
 .video-item h2 {
@@ -140,6 +140,7 @@ footer p {
 
 #title {
     text-align: center;
+    margin-top: 0.5em;
 }
 
 video::-webkit-media-controls-volume-slider {
@@ -150,3 +151,8 @@ video::-webkit-media-controls-mute-button {
     display: none; /* Opcional: ocultar el botón de mutear (en algunos navegadores) */
 }
 
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+    .video-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
